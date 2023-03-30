@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="ioss_application.css" />
+<html>
+<head>
+    <title>SCHOOL SELECTION</title>
+</head>
+<body>
+    <div class="menu">
+        <h4 class="register">Register</h4>
+        <h4 class="mkslctn">Make Selection</h4>
+        <h4 class="chkslctn">Check Selection</h4>
+    </div>
+    <div class="reggie">
+            <form class="form" id="register" method="POST">
+                <h2>ENTER STUDENT DETAILS</h2>
+                <div>
+                    <label>Name</label>
+                    <input class="name" name="username" type="text" placeholder="Enter username" required>
+                </div>
+                <div>
+                    <label>Index NO.</label>
+                    <input class="name" name="indexnum" type="text" placeholder="KCPE Index No." required>
+                </div>
+                <div>
+                    <label>EMAIL</label>
+                    <input class="name" name="email" type="email" placeholder="Enter email address" required>
+                </div>
+                <div>
+                    <label>Gender</label>
+                    <input class="name" type="radio" name="gender" value="Male">Male
+                    <input class="name" type="radio" name="gender" value="Female">Female
+                </div>
+                <div>
+                    <label>D.O.B</label>
+                    <input class="name" type="date" name="dateofbirth" placeholder="Enter D.O.B" required>
+                </div>
+                <div>
+                    <label>School</label>
+                    <input class="name" type="text" name="school" placeholder="Enter School" required><br><br>
+                </div>
+
+                <label for="nationals">NATIONAL SCHOOLS</label><br>
+                <select name="nationals" id="nationals">
+                <option></option>
+                <option>KENYATTA HIGH MWATATE</option>
+                <option>MOI GIRLS</option>
+                <option>MAMA NGINA GIRLS</option>
+                <option>STAREHE BOYS</option>
+                <option>STAREHE GIRLS</option>
+                <option>RIBE BOYS</option>
+                <option>KAGUMO HIGH</option>
+                <option>MURANGA HIGH</option>
+                <option>MACHAKOS BOYS</option>
+                <option>MUTHALE GIRLS</option>
+                <option>MOI HIGH MBIRURI</option>
+                <option>MAKUENI BOYS</option>
+                <option>CHOGORIA GIRLS</option>
+                <option>PANGANI GIRLS</option>
+                <option>ST BRIGIDS KIMININI</option>
+                <option>ST.THERESA’S TARTAR GIRLS SECONDARY SCHOOL</option>
+                <option>KIPSIGIS GIRLS HIGH SCHOOL	</option>
+                <option>KAPSABET BOYS</option>
+                <option>ST PATRICK ITEN</option>
+                <option>KISUMU GIRLS</option>
+                <option>KISUMU BOYS</option>
+                <option>FRIENDS KAMUSINGA</option>
+                <option>KAKAMEGA SCHOOL</option>
+                <option>KISII HIGH</option>
+                <option>MARANDA HIGH</option>
+                </select>
+                <br>
+                <label for="xtracounty">SUB-COUNTY SCHOOLS</label><br>
+                <select name="xtracounty" id="xtracounty">
+                    <option></option>
+                    <option>KHAMIS SECONDARY SCHOOL</option>
+                    <option>COAST GIRLS HIGH SCHOOL</option>
+                </select>
+                <br>
+                <label for="county">COUNTY SCHOOLS</label><br>
+                <select name="county" id="county">
+                    <option></option>
+                    <option>MTONGWE GIRLS SECONDARY SCHOOL</option>
+                    <option>SHIKAADABU SECONDARY SCHOOL</option>
+                    <option>MWAHIMA SECONDARY SCHOOL</option>
+                    <option>LIKONI SECONDARY SCHOOL</option>
+                    <option>PUMA SECONDARY SCHOOL</option>
+                    <option>MRIMA MIXED DAY SECONDARY SCHOOL</option>
+                    <option>BUBUBU BOYS SECONDARY SCHOOL</option>
+                    <option>CHANGAMWE SECONDARY SCHOOL</option>
+                    <option>ST. CHARLES LWANGA SECONDARY SCHOOL</option>
+                    <option>MWIJABU SECONDARY SCHOOL</option>
+                    <option>CHAANI SECONDARY SCHOOL</option>
+                    <option>BOMU SECONDARY SCHOOL</option>
+                    <option>MWAKIRUNGE SECONDARY SCHOOL</option>
+                    <option>MTOPANGA MIXED SECONDARY SCHOOL</option>
+                    <option>HASSAN JOHO GIRLS’ SECONDARY SCHOOL</option>
+                    <option>MARIMANI MIXED SECONDARY SCHOOL</option>
+                    <option>KAJEMBE HIGH SCHOOL</option>
+                    <option>MIRITINI SECONDARY SCHOOL</option>
+                    <option>JOMVU GIRLS HIGH SCHOOL</option>
+                    <option>MIRITINI COMPLEX HIGH SCHOOL</option>
+                    <option>MAWENI MIXED SECONDARY SCHOOL</option>
+                    <option>FRERETOWN SECONDARY SCHOOL</option>
+                </select>
+                <br>
+                <div>
+                    <button class="button" name="submit" formaction="insert.php">Submit</button>
+                </div>
+            </form>
+    </div>
+            <div class="makeslctn">
+                <div class="selections">
+                    <h3 align="center">YOUR SELECTIONS</h3>
+                    <h4>NATIONAL SCHOOL</h4>
+                    <h4>EXTRA COUNTY SCHOOL</h4>
+                    <h4>COUNTY SCHOOL</h4>
+                </div>
+            </div>
+    <script src="iss.js"></script>
+</body>
+
+</html>

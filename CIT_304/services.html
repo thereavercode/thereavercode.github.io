@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            ZUMO KENYA | Services
+        </title>
+        <link rel="alternate icon" class="js-site-favicon" type="image/png" href="https://www.kali.org/images/favicon.png">
+        <link rel="icon" class="js-site-favicon" type="image/svg+xml" href="https://www.kali.org/images/favicon.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,600;1,100;1,600&family=Ubuntu:ital,wght@0,300;0,400;1,300;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+    <body>
+        <section class="header">
+            <nav id="navigation">
+                <a href="index.html"><img src=pics\zumo.jpeg></a>
+                <h2>ZUMO KENYA</h2>
+
+                <div class="menu" id="menus">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.php">HOME</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#services">SERVICES</a></li>
+                        <li><a href="#">BLOG</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+                <div class="info">
+                    <p align="center">
+                        <a href="logout.php" class="btn btn-danger ml-3">Sign Out of Your Account</a>
+                        <a href="reset-password.php" class="btn btn-warning">Reset Your Password</a>
+                    </p>
+                    <h1>World's Biggest FinTech</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        <br> Illo, labore! Iure obcaecati, esse nulla enim nostrum sapiente placeat 
+                        <br> doloremque cumque dicta. Voluptate inventore error perspiciatis repellendus nemo cum nulla!<br>
+                        ZUMO is a company that seeks to provide an online presence for <em>Startups and Established Businesses</em>.               
+                    </p>
+                    <a href="/site/forum/index.php" class="hero-btn">Visit our Forum</a>
+                    
+                </div>
+            <a id="down-arrow" href="#services"><div></div></a>
+        </section>
+        <div class="container">
+        <!----Services Section---->
+        <section class="services" id="services">
+            <h1>Services We Offer</h1>
+            <p>
+                We seek to provide an online presence for startups and established businesses.
+            </p>
+            <div class="row">
+                <div class="services-col">
+                    <h3>Web Development</h3>
+                    <p>
+                        Web Development refers to the design of websites that are displayed on the internet.
+                        It usually refers to the user experience aspects of website development rather than software development.
+                        Web design used to be focused on designing websites for desktop browsers; 
+                        however, since the mid-2010s, design for mobile and tablet browsers has become 
+                        ever-increasingly important.
+                    </p>
+                </div>
+                <div class="services-col">
+                    <h3>Web Hosting</h3>
+                    <p>
+                        Web Hosting refers to the design of websites that are displayed on the internet.
+                        It usually refers to the user experience aspects of website development rather than software development.
+                        Web design used to be focused on designing websites for desktop browsers; 
+                        however, since the mid-2010s, design for mobile and tablet browsers has become 
+                        ever-increasingly important.
+                    </p>
+                </div>
+                <div class="services-col">
+                    <h3>Database Administration</h3>
+                    <p>
+                        Database Administration refers to the design of websites that are displayed on the internet.
+                        It usually refers to the user experience aspects of website development rather than software development.
+                        Web design used to be focused on designing websites for desktop browsers; 
+                        however, since the mid-2010s, design for mobile and tablet browsers has become 
+                        ever-increasingly important.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!----Script for open/close Menu---->
+        <script>
+            var menus = document.getElementById("menus");
+            function showMenu(){
+                menus.style.right = "0";
+            }
+            function hideMenu(){
+                menus.style.right = "-200px";
+            }
+                //When the user scrolls down 50px from the top of the document, resize the header's font size
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                    document.getElementById("navigation").style.height = "50px";
+                    document.getElementById("navigation").style.padding = "0.5% 4%";
+                    document.getElementById("navigation").style.background = "#20201fe3";
+            } else {
+                    document.getElementById("navigation").style.height = "100px";
+                    document.getElementById("navigation").style.padding = "2% 6%";
+                    document.getElementById("navigation").style.background = "transparent";
+                }
+            }
+
+        </script>
+        </div>
+    </body>
+    <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/61bb32ecc82c976b71c1bfd7/1fn1jtrum';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+</html>
